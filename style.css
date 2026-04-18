@@ -1,28 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background-color: #0f172a;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 60px;
     background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav h1 {
+    color: #38bdf8;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+}
+
+/* Sections */
 section {
-    padding: 50px;
-    text-align: center;
+    padding: 80px 60px;
 }
 
 h2 {
     color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Hero */
+#hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#hero h2 {
+    font-size: 40px;
+}
+
+/* Cards (Projects) */
+.project-card {
+    background: #020617;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
 }
